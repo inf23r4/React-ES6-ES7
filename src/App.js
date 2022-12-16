@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import Componente from './components/components';
+import Componente, { ComponenteConst, ComponenteFunction } from './components/components';
+import Propiedades from './components/props';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    
         <Componente msg="Componente h2 prop"/>
+        <ComponenteFunction msg="Componente Funcional"/>
+        <ComponenteConst msg = "coomponente expresado en un Const"/>
+        <hr/>
+        <Propiedades 
+        candena= 'cadena de texto' 
+        numero = {12} 
+        boolean = {true}
+        arreglo = {[1,2,3,4]}
+        objeto = {{nombre:"asd", correo:"asdasd@gmail.com"}}
+        function={(num) => num * num}
+        elementoReact= {<i>esto es un elemento React</i>}
+        componenteReact = {
+          <Componente msg = "Soy un componente pasado como prop" />
+        }
+        />
       </header>
     </div>
   );
