@@ -3,6 +3,8 @@ import './App.css';
 import Componente, { ComponenteConst, ComponenteFunction } from './components/components';
 import Propiedades from './components/props';
 import Estado from './components/estado';
+import { ReanderizadoCondicional } from './components/RenderizadoCondicional';
+import ReanderizadoElementos from './components/RenderizadoElementos';
 
 function App() {
   return (
@@ -28,6 +30,10 @@ function App() {
         />
         <br/>
         <Estado/>
+        <br/>
+        <ReanderizadoCondicional/>
+        <br/>
+        <ReanderizadoElementos/>
       </header>
     </div>
   );
