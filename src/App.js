@@ -5,6 +5,7 @@ import Propiedades from './components/props';
 import Estado from './components/estado';
 import { ReanderizadoCondicional } from './components/RenderizadoCondicional';
 import ReanderizadoElementos from './components/RenderizadoElementos';
+import Eventos, { EventosES7 } from './components/eventos';
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
         <ReanderizadoCondicional/>
         <br/>
         <ReanderizadoElementos/>
+        <br/>
+        <Eventos/>
+        <br/>
+        <EventosES7/>
       </header>
     </div>
   );
